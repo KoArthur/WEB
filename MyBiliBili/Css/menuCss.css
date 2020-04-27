@@ -1,0 +1,131 @@
+.menu {
+    margin: 20px auto;
+    width: 1150px;
+    height: 100px;
+}
+
+/*菜单左边*/
+.menu-left {
+    float: left;
+}
+
+.menu-left-HDR {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    float: left;
+    text-align: center;
+    line-height: 36px;
+}
+
+#shouye {
+    background-color: #FF1493;
+}
+
+#dongtai {
+    background-color: #FFA500;
+}
+
+#paihang {
+    background-color: #4682B4;
+}
+
+#homepage #dynamic #rank{
+    width: 56px;
+}
+
+.block-p {
+    width: 36px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 40px;
+}
+.menu-left-a {
+    color: black;
+}
+
+.menu-left-a:hover {
+    color: #87CEFA;
+}
+/*菜单左边*/
+
+/*分割线*/
+.division {
+    float: left;
+    width: 1px;
+    height: 43px;
+    background-color: #cccccc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/*中间的分类*/
+.subfield-character {
+    height: 20px;
+    float: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.subfield-number {
+    height: 12px;
+    font-size: 10px;
+    float: left;
+    background-color: #87CEFA;
+    color: white;
+    margin-top: 10px;
+    margin-left: 3px;
+    border-radius: 2px;
+}
+
+.below {
+    margin-top: 30px;
+    color: black;
+}
+
+.subfield-a {
+    color: inherit;
+    text-align: center;
+}
+
+.subfield {
+    color: black;
+}
+
+.subfield:hover {
+    color: #87CEFA;
+}
+
+.below:hover {
+    color: #87CEFA;
+}
+/*中间的分类*/
+
+/*右边的分类*/
+.subfield-div {
+    float: left;
+}
+
+.right-subfield {
+    margin-top: 5px;
+}
+
+.right-blow {
+    margin-top: 35px;
+    color: black;
+}
+
+.right-subfield:hover {
+    color: #87CEFA;
+}
+
+.right-blow:hover {
+    color: #87CEFA;
+}
+
+.subfield-div {
+    margin-top: 1px;
+    margin-left: 5px;
+}

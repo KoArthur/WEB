@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BiliBili</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1623322_oixjfv46nr.css">
+    <link href="../Css/normalCss.css" rel="stylesheet" type="text/css">
+    <link href="../Css/headCss.css" rel="stylesheet" type="text/css"/>
+    <link href="../Css/menuCss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Js/headJs.js"></script>
+</head>
+<body>
+<!--整体-->
+<div>
+<!--    上部分-->
+    <div class="head">
+        <div class="head-tab">
+<!--            左边-->
+            <div class="tab-left">
+<!--                主站，番剧，游戏中心，直播，会员购，漫画，赛事，下载APP-->
+                <ul>
+<!--                电视(img)，主站-->
+                    <li>
+                        <a href="https://www.bilibili.com/" target="_blank" class="tab-a">
+                            <i class="iconfont icon-bilibili-fill"></i>
+                            主站
+                        </a>
+                    </li>
+<!--                番剧-->
+                    <li>
+                        <a href="https://www.bilibili.com/anime/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.2" target="_blank" class="tab-a">
+                            番剧
+                        </a>
+                    </li>
+<!--                游戏中心-->
+                    <li>
+                        <a id="gameCenter" target="_blank" href="https://game.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.3" class="tab-a">
+                            游戏中心
+                        </a>
+                    </li>
+<!--                直播-->
+                    <li>
+                        <a id="live" target="_blank" href="https://live.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.4" class="tab-a">
+                            直播
+                        </a>
+                    </li>
+<!--                会员购-->
+                    <li>
+                        <a target="_blank" href="https://show.bilibili.com/platform/home.html?msource=pc_web&spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.5" class="tab-a">
+                            会员购
+                        </a>
+                    </li>
+<!--                漫画-->
+                    <li>
+                        <a id="cartoon" target="_blank" href="https://manga.bilibili.com/?from=bill_top_mnav&spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.6" class="tab-a">
+                            漫画
+                        </a>
+                    </li>
+<!--                赛事-->
+                    <li>
+                        <a target="_blank" href="https://www.bilibili.com/v/game/match/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.7" class="tab-a">
+                            赛事
+                        </a>
+                    </li>
+<!--                拜年祭-->
+                    <li>
+                        <a target="_blank" href="https://www.bilibili.com/blackboard/bnj2020.html?bsource=2020bnjdd&spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.8&aid=78976165" class="tab-a">
+                            拜年祭
+                        </a>
+                    </li>
+<!--                手机(img)，下载APP-->
+                    <li>
+                        <a id="app" target="_blank" href="https://app.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.9" class="tab-a">
+                            <i class="iconfont icon-shouji"></i>
+                            下载APP
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<!--            中间-->
+            <div class="tab-find">
+                <div class="tab-center">
+                    <!--                搜索栏，网址https://search.bilibili.com/all?keyword=？？搜索栏输入东西？？&from_source=nav_search_new-->
+                    <input type="text" id="keyword" class="tab-center-search" placeholder="输入内容" oninput="changeHref()">
+                    <div class="tab-center-ss">
+                        <!--                    搜索按钮-->
+                        <a href="" target="_blank" id="destination">
+                            <i class="iconfont icon-sousuo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!--            右边-->
+            <div class="tab-right">
+<!--                登录，注册，投稿-->
+                <ul>
+                    <li>
+                        <a href="https://passport.bilibili.com/login" target="_blank">
+                            <div class="avatar">
+<!--                                登录头像圆形-->
+                            </div>
+                            <div  id="login" href="https://passport.bilibili.com/login" target="_blank">
+                                登录
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="register" href="https://passport.bilibili.com/register/phone.html?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.11#/phone" target="_blank">
+                            注册
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div id="contribute" class="contribute">
+                                投稿
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--        bilibili冬-->
+        <a class="BiliBili-dong" href="https://www.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.14" target="_self">
+            <i class="iconfont icon-bilibili" id="BiliBili"></i>
+            <i class="iconfont icon-dong" id="dong"></i>
+        </a>
+    </div>
+<!--    下部分-->
+    <div class="menu">
+<!--        左边-->
+        <div class="menu-left">
+<!--            首页，动态，排行榜-->
+            <ul>
+                <li id="homepage">
+                    <a class="menu-left-a" href="https://www.bilibili.com/" target="_self">
+                        <div class="menu-left-HDR" id="shouye">
+                            <i class="iconfont icon-fangzi" style="color: white; font-size: 25px"></i>
+                        </div>
+                        <p class="block-p">首页</p>
+                    </a>
+                </li>
+                <li id="dynamic">
+                    <a class="menu-left-a" href="https://t.bilibili.com/?spm_id_from=333.851.b_7072696d61727950616765546162.2" target="_blank">
+                        <div class="menu-left-HDR" id="dongtai">
+                            <i class="iconfont icon-weibiaoti-" style="color: white; font-size: 25px"></i>
+                        </div>
+                        <p class="block-p">动态</p>
+                    </a>
+                </li>
+                <li id="rank">
+                    <a class="menu-left-a" href="https://www.bilibili.com/ranking?spm_id_from=333.851.b_7072696d61727950616765546162.3" target="_blank">
+                        <div class="menu-left-HDR" id="paihang">
+                            <i class="iconfont icon-paixing" style="color: white; font-size: 25px"></i>
+                        </div>
+                        <p class="block-p">排行榜</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+<!--        分割线-->
+        <div class="division"></div>
+<!--        中间-->
+        <div class="menu-center">
+<!--            动画，音乐，舞蹈，... ，广告，影视，更多-->
+            <ul>
+<!--                subfield——子域-->
+                <li>
+                    <div class="subfield">
+                        <a id="menu-cartoon" class="subfield-a" href="https://www.bilibili.com/v/douga/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.1">
+                            <div class="subfield-character">动画</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                        <a id="film" class="subfield-a" href="https://www.bilibili.com/anime/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.2">
+                            <div class="subfield-character">番剧</div>
+                            <div class="subfield-number">176</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a id="music" class="subfield-a" href="https://www.bilibili.com/v/music/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.14">
+                            <div class="subfield-character">音乐</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                        <a id="china" class="subfield-a" href="https://www.bilibili.com/guochuang/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.24">
+                            <div class="subfield-character">国创</div>
+                            <div class="subfield-number">244</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a id="dance" class="subfield-a" href="https://www.bilibili.com/v/dance/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.23">
+                            <div class="subfield-character">舞蹈</div>
+                            <div class="subfield-number">931</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                        <a id="game" class="subfield-a" href="https://www.bilibili.com/v/game/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.39">
+                            <div class="subfield-character">游戏</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a id="technology" class="subfield-a" href="https://www.bilibili.com/v/technology/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.36">
+                            <div class="subfield-character">科技</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                        <a id="digital" class="subfield-a" href="https://www.bilibili.com/v/digital/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.56">
+                            <div class="subfield-character">数码</div>
+                            <div class="subfield-number">783</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a id="life" class="subfield-a" href="https://www.bilibili.com/v/life/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.61">
+                            <div class="subfield-character">生活</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                        <a id="guichu" class="subfield-a" href="https://www.bilibili.com/v/kichiku/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.66">
+                            <div class="subfield-character">鬼畜</div>
+                            <div class="subfield-number">293</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a id="vogue" class="subfield-a" href="https://www.bilibili.com/v/fashion/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.71">
+                            <div class="subfield-character">时尚</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                        <a class="subfield-a" href="https://www.bilibili.com/v/ad/ad/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.77#/">
+                            <div class="subfield-character">广告</div>
+                            <div class="subfield-number">171</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a id="recreation" class="subfield-a" href="https://www.bilibili.com/v/ent/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.83">
+                            <div class="subfield-character">娱乐</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                       <a id="yingshi" class="subfield-a" href="https://www.bilibili.com/v/cinephile/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.82">
+                           <div class="subfield-character">影视</div>
+                           <div class="subfield-number">999+</div>
+                       </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a id="movie" class="subfield-a" href="https://www.bilibili.com/cinema/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.89">
+                            <div class="subfield-character">放映厅</div>
+                            <div class="subfield-number">584</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                        <a class="subfield-a" href="https://www.bilibili.com/v/life/funny?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.88#/">
+                            <div class="subfield-character">搞笑</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a class="subfield-a" href="https://www.bilibili.com/v/life/animal?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.94#/">
+                            <div class="subfield-character">动物圈</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                       <a class="subfield-a" href="https://www.bilibili.com/v/life/food?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.98#/">
+                           <div class="subfield-character">美食圈</div>
+                           <div class="subfield-number">999+</div>
+                       </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="subfield">
+                        <a class="subfield-a" href="https://www.bilibili.com/v/game/stand_alone?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.99#/">
+                            <div class="subfield-character">单机游戏</div>
+                            <div class="subfield-number">999+</div>
+                        </a>
+                    </div>
+                    <div class="below">
+                       <a class="subfield-a" href="https://www.bilibili.com/v/life/daily/?spm_id_from=333.158.b_7072696d6172794368616e6e656c4d656e75.100#/530003">
+                           <div class="subfield-character">VLOG</div>
+                           <div class="subfield-number"></div>
+                       </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+<!--        分割线-->
+        <div class="division"></div>
+        <!--        右边-->
+        <div class="menu-right">
+<!--            专栏，小黑屋，活动，直播，专题，赛事-->
+            <ul>
+                <li>
+                    <div class="right-subfield">
+                        <a class="subfield-a" href="https://www.bilibili.com/read/home?spm_id_from=333.851.b_7072696d617279467269656e64736869704c696e6b.1" target="_blank">
+                            <i class="iconfont icon-bangdan" style="color: #87CEFA; font-size: 24px; display: block; float: left"></i>
+                            <div class="subfield-div">专栏</div>
+                        </a>
+                    </div>
+                    <div class="right-blow">
+                        <a id="zhibo" class="subfield-a" href="https://live.bilibili.com/?spm_id_from=333.851.b_7072696d617279467269656e64736869704c696e6b.2" target="_blank">
+                            <i class="iconfont icon-sheyingji" style="color: #87CEFA; font-size: 24px; display: block; float: left"></i>
+                            <div class="subfield-div">直播</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="right-subfield">
+                        <a class="subfield-a" href="https://www.bilibili.com/blackroom/ban?spm_id_from=333.851.b_7072696d617279467269656e64736869704c696e6b.3" target="_blank">
+                            <i class="iconfont icon-tianping" style="color: #F4A460; font-size: 24px; display: block; float: left"></i>
+                            <div class="subfield-div">小黑屋</div>
+                        </a>
+                    </div>
+                    <div class="right-blow">
+                        <a class="subfield-a" href="https://www.bilibili.com/blackboard/topic_list.html?spm_id_from=333.851.b_7072696d617279467269656e64736869704c696e6b.4#/" target="_blank">
+                            <i class="iconfont icon-qipao" style="color: #32CD32; font-size: 24px; display: block; float: left"></i>
+                            <div class="subfield-div">专题</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="right-subfield">
+                        <a class="subfield-a" href="https://www.bilibili.com/blackboard/x/act_list/" target="_blank">
+                            <i class="iconfont icon-qizi_icon" style="color: #FFA500; font-size: 24px; display: block; float: left"></i>
+                            <div class="subfield-div">活动</div>
+                        </a>
+                    </div>
+                    <div class="right-blow">
+                        <a class="subfield-a" href="https://www.bilibili.com/v/game/match/?spm_id_from=333.851.b_7072696d617279467269656e64736869704c696e6b.6" target="_blank">
+                            <i class="iconfont icon-jiangbei" style="color: #FFD700; font-size: 24px; display: block; float: left"></i>
+                            <div class="subfield-div">赛事</div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../Js/showTooltip.js"></script>
+</body>
+</html>

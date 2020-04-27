@@ -1,0 +1,133 @@
+.head {
+    height: 155px;
+    background-image: url("../Image/Head/bg.jpg");
+    color: white;
+}
+
+.head-tab {
+    position: absolute;
+    width: 100%;
+}
+
+/*tab-left*/
+.tab-left {
+    width: 510px;
+    margin-top: 15px;
+    float: left;
+}
+
+/*tab-fid包含后面所有 tab-center包含后面所有 tab-center-search输入框 + tab-center-ss搜索按钮*/
+.tab-find {
+    float: left;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.tab-center {
+    margin: 8px auto;
+    width: 520px;
+    height: 38px;
+    float: left;
+}
+
+.tab-center-search {
+    display: block;
+    border: 1px;
+    float: left;
+    width: 460px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.tab-center-ss {
+    position: relative;
+    margin-left: -10px;
+    float: left;
+    width: 50px;
+    height: 36px;
+    text-align: center;
+    line-height: 34px;
+    background-color: #dddddd;
+    border-radius: 5px;
+    color: black;
+}
+/*tab-fid包含后面所有 tab-center包含后面所有 tab-center-search输入框 + tab-center-ss搜索按钮*/
+
+
+/*tab-right*/
+.tab-right {
+    width: 250px;
+    margin-top: 15px;
+    margin-right: 10px;
+    float: right;
+}
+
+/*所有table里面的 a 标签*/
+.tab-a {
+    color: white;
+}
+
+/*搜搜按钮的颜色呈现上一级的颜色*/
+#destination {
+    color: inherit;
+}
+
+/*鼠标移动到搜索按钮*/
+.tab-center-ss:hover {
+    color: cyan;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+/*头像*/
+.avatar {
+    background-color: aqua;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    float: left;
+    margin-top: -7px;
+    margin-right: 5px;
+}
+
+/*登录*/
+#login {
+    float: left;
+    color: white;
+}
+
+/*注册*/
+.register {
+    color: white;
+}
+
+/*投稿*/
+.contribute {
+    margin-top: -9px;
+    width: 100px;
+    height: 40px;
+    background-color: hotpink;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+/* 图片中的 bilibili 与 冬 */
+.BiliBili-dong {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 80px;
+    z-index: 1;
+}
+#BiliBili {
+    font-size: 50px;
+    color: white;
+}
+#dong {
+    font-size: 33px;
+    color: white;
+}
+/* 图片中的 bilibili 与 冬 */
